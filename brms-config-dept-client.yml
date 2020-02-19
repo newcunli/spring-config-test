@@ -21,13 +21,13 @@ spring:
       max-total: 5
       max-wait-millis: 200
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xm1
+  config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.standard.brms.entities
   mapper-locations:
   - classpath: mybatis/mapper/**/*.xml
 eureka:
   client: #客户端注册进eureka服务列表内
-    service-ur1:
+    service-url:
       defaultZone: http://eureka7001.com:7001/eureka
   instance:
     instance-id: dept-8001.com
@@ -57,13 +57,13 @@ spring:
       max-total: 5
       max-wait-millis: 200
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xm1
+  config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.standard.brms.entities
   mapper-locations:
   - classpath: mybatis/mapper/**/*.xml
 eureka:
   client: #客户端注册进eureka服务列表内
-    service-ur1:
+    service-url:
       defaultZone: http://eureka7001.com:7001/eureka
   instance:
     instance-id: dept-8001.com
